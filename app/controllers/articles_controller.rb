@@ -3,6 +3,10 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
 
+  def index
+    @articles = Article.all
+  end
+
   def create
     @article = Article.new(article_params)
 
@@ -32,10 +36,13 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def index
-    @articles = Article.all
-  end
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
 
+    flash[:notice] = 'Article Was Deleted'
+    redirect_to articles_path
+  end
 
   private
     def article_params
