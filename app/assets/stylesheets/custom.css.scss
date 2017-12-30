@@ -12,13 +12,15 @@ $navbar-default-bg: $primary-color-dark;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// general & application
 
 body {
   color: $primary-text-color;
 }
 
-.navbar-default .navbar-nav li a {
-  color: $primary-color-text;
+a:hover {
+  text-decoration: none;
+  color: tomato;
 }
 
 #logo {
@@ -32,35 +34,30 @@ body {
 
 #logo:hover {
   color: $primary-color-text;
-  text-decoration: none;
 }
 
-  .navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a {
   color: $primary-text-color;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: tomato;
+}
+
+.navbar-default .navbar-nav .open a {
+  color: $primary-text-color;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu li a {
+  color: $primary-text-color;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu li a:hover {
+  color: tomato;
 }
 
 .center {
   text-align: center;
-}
-
-.jumbotron {
-  background-image: asset-url("jumbotron-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.jumbotron h1 {
-  color: $primary-color-text;
-  letter-spacing: -1px;
-  text-shadow: 1px 1px 2px #000;
-  margin-bottom: 25px;
-  font-weight: bold;
-}
-
-#welcome-text {
-  color: $primary-color-text;
-  font-size: 1.5em;
-  margin-bottom: 25px;
 }
 
 .btn-xlarge {
@@ -76,6 +73,7 @@ body {
 
 footer {
   width: 100%;
+  margin-top: 5px;
   padding-top: 5px;
   border-top: solid $divider-color;
 }
@@ -92,3 +90,27 @@ footer nav ul {
 footer a:hover {
   text-decoration: none;
 }
+
+// home
+
+.jumbotron {
+  background-image: asset-url("jumbotron-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: $primary-color-text;
+  letter-spacing: -1px;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+#welcome-text {
+  color: $primary-text-color;
+  font-size: 1.25em;
+  margin-bottom: 25px;
+}
+
+// form
