@@ -61,15 +61,10 @@ a:hover {
   text-align: center;
 }
 
-.btn-xlarge {
-  background: $accent-color;
-  font-size: 1.7em;
-  color: $primary-text-color;
-}
-
-.btn-xlarge:hover {
-  background: $accent-color;
-  color: $primary-color-text;
+.btn-huge {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1em;
 }
 
 footer {
@@ -118,4 +113,19 @@ footer a:hover {
 
 #article_title {
   margin-top: 15px;
+}
+
+// show
+
+.article-actions {
+  border-top: 1px solid $divider-color;
+  padding-top: 10px;
+}
+
+.article-actions .btn {
+  margin: 5px;
+}
+
+.description {
+  margin: 0;
 }
