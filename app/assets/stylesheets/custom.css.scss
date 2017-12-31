@@ -129,3 +129,16 @@ footer a:hover {
 .description {
   margin: 0;
 }
+
+// index
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.35em;
+}
+
+.article-body {
+  border-top: 1px solid $divider-color;
+  padding: 15px 0;
+
+}
