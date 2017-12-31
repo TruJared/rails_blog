@@ -16,11 +16,12 @@ $navbar-default-bg: $primary-color-dark;
 
 body {
   color: $primary-text-color;
+  font-size: 2em;
 }
 
 a:hover {
   text-decoration: none;
-  color: tomato;
+  color: $accent-color;
 }
 
 #logo {
@@ -41,7 +42,7 @@ a:hover {
 }
 
 .navbar-default .navbar-nav li a:hover {
-  color: tomato;
+  color: $accent-color;
 }
 
 .navbar-default .navbar-nav .open a {
@@ -68,7 +69,7 @@ a:hover {
 
 .btn-xlarge:hover {
   background: $accent-color;
-  color: $primary-color-dark;
+  color: $primary-color-text;
 }
 
 footer {
@@ -114,3 +115,7 @@ footer a:hover {
 }
 
 // form
+
+#article_title {
+  margin-top: 15px;
+}
